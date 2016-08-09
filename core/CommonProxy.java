@@ -45,7 +45,6 @@ public class CommonProxy {
 
 	public void customAnimationEffect(World world, Entity e, int fxid, double x, double y, double z, double motionx,
 			double motiony, double motionz) {
-		Minecraft.getMinecraft().effectRenderer.addEffect(FXHandler.getFx(Minecraft.getMinecraft().getTextureManager(), e, fxid, world, x,y,z, motionx, motiony, motionz));
 	}
 	
 
