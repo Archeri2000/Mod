@@ -1,0 +1,88 @@
+[09:34:45] [Server thread/ERROR] [FML/]: 
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCH	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCH	FML{8.0.99.99} [Forge Mod Loader] (forge-1.10.2-12.18.1.2046-universal.jar) 
+	UCH	Forge{12.18.1.2046} [Minecraft Forge] (forge-1.10.2-12.18.1.2046-universal.jar) 
+	UCE	kirinoCore{1.0.3} [Linear Reborn] (modid-1.0.jar) 
+	UCE	kirinoCommands{1.0.3} [Linear Reborn Commands] (modid-1.0.jar) 
+	UCE	kirinoMobs{1.0.3} [Linear Reborn Mobs] (modid-1.0.jar) 
+	UCE	kirinoArmor{1.0.3} [Linear Reborn Armor] (modid-1.0.jar) 
+	UCE	kirinoAxe{1.0.3} [Linear Reborn Axe] (modid-1.0.jar) 
+	UCE	kirinoBow{1.0.3} [Linear Reborn Bow] (modid-1.0.jar) 
+	UCE	kirinoBullets{1.0.3} [Linear Reborn Bullets] (modid-1.0.jar) 
+	UCE	kirinoDagger{1.0.3} [Linear Reborn Dagger] (modid-1.0.jar) 
+	UCE	kirinoFirearm{1.0.3} [Linear Reborn Firearm] (modid-1.0.jar) 
+	UCE	kirinoGrimoire{1.0.3} [Linear Reborn Grimoire] (modid-1.0.jar) 
+	UCE	kirinoHoe{1.0.3} [Linear Reborn Hoe] (modid-1.0.jar) 
+	UCE	kirinoInstrument{1.0.3} [Linear Reborn Instrument] (modid-1.0.jar) 
+	UCE	kirinoItems{1.0.3} [Linear Reborn Items] (modid-1.0.jar) 
+	UCE	kirinoPickaxe{1.0.3} [Linear Reborn Pickaxes] (modid-1.0.jar) 
+	UCE	kirinoShuriken{1.0.3} [Linear Reborn Shurikens] (modid-1.0.jar) 
+	UCE	kirinoSpade{1.0.3} [Linear Reborn Spade] (modid-1.0.jar) 
+	UCE	kirinoSword{1.0.3} [Linear Reborn Sword] (modid-1.0.jar) 
+	UCE	kirinoWand{1.0.3} [Linear Reborn Wand] (modid-1.0.jar) 
+[09:34:45] [Server thread/ERROR] [FML/]: The following problems were captured during this phase
+[09:34:45] [Server thread/ERROR] [FML/]: Caught exception from kirinoCore
+java.lang.NoClassDefFoundError: net/minecraft/client/entity/EntityPlayerSP
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_101]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_101]
+	at net.minecraftforge.common.capabilities.CapabilityManager$3.apply(CapabilityManager.java:171) ~[CapabilityManager$3.class:?]
+	at net.minecraftforge.common.capabilities.CapabilityManager$3.apply(CapabilityManager.java:165) ~[CapabilityManager$3.class:?]
+	at net.minecraftforge.common.capabilities.CapabilityManager.register(CapabilityManager.java:100) ~[CapabilityManager.class:?]
+	at net.minecraftforge.common.capabilities.CapabilityManager.register(CapabilityManager.java:58) ~[CapabilityManager.class:?]
+	at net.kirinnee.skills.core.SkillCapability.PreInit(SkillCapability.java:22) ~[SkillCapability.class:?]
+	at net.kirinnee.core.CommonProxy.preInit(CommonProxy.java:40) ~[CommonProxy.class:?]
+	at net.kirinnee.core.ServerProxy.preInit(ServerProxy.java:21) ~[ServerProxy.class:?]
+	at net.kirinnee.core.Main.preInit(Main.java:124) ~[Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_101]
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:595) ~[forge-1.10.2-12.18.1.2046-universal.jar:?]
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_101]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) ~[minecraft_server.1.10.2.jar:?]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) ~[minecraft_server.1.10.2.jar:?]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) ~[minecraft_server.1.10.2.jar:?]
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304) ~[minecraft_server.1.10.2.jar:?]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275) ~[minecraft_server.1.10.2.jar:?]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:239) ~[forge-1.10.2-12.18.1.2046-universal.jar:?]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:217) ~[forge-1.10.2-12.18.1.2046-universal.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_101]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) ~[minecraft_server.1.10.2.jar:?]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) ~[minecraft_server.1.10.2.jar:?]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) ~[minecraft_server.1.10.2.jar:?]
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304) ~[minecraft_server.1.10.2.jar:?]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275) ~[minecraft_server.1.10.2.jar:?]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:142) [LoadController.class:?]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:607) [Loader.class:?]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98) [FMLServerHandler.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:328) [FMLCommonHandler.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:121) [ld.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:431) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_101]
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.entity.EntityPlayerSP
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[launchwrapper-1.12.jar:?]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_101]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_101]
+	... 41 more
+Caused by: net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerException: Exception in class transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer@7dda48d9 from coremod FMLCorePlugin
+	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:253) ~[forge-1.10.2-12.18.1.2046-universal.jar:?]
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279) ~[launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176) ~[launchwrapper-1.12.jar:?]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_101]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_101]
+	... 41 more
+Caused by: java.lang.RuntimeException: Attempted to load class bnn for invalid side SERVER
+	at net.minecraftforge.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:56) ~[forge-1.10.2-12.18.1.2046-universal.jar:?]
+	at net.minecraftforge.fml.common.asm.ASMTransformerWrapper$TransformerWrapper.transform(ASMTransformerWrapper.java:249) ~[forge-1.10.2-12.18.1.2046-universal.jar:?]
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279) ~[launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176) ~[launchwrapper-1.12.jar:?]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_101]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_101]
+	... 41 more
+[09:34:45] [Server thread/WARN] [FML/]: Can't revert to frozen GameData state without freezing first.
